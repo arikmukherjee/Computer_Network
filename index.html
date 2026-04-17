@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillSwap Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo">SS</div>
+        <div>
+          <h2>SkillSwap</h2>
+          <p>Peer Learning Platform</p>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <a class="active" href="#">Dashboard</a>
+        <a href="#">Profile</a>
+        <a href="#">Matches</a>
+        <a href="#">Messages</a>
+        <a href="#">Sessions</a>
+        <a href="#">Reviews</a>
+        <a href="#">Settings</a>
+      </nav>
+
+      <div class="sidebar-card">
+        <p>Premium Plan</p>
+        <h3>12 Active Matches</h3>
+        <span>Grow your learning network</span>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h1>Dashboard</h1>
+          <p>Welcome back, Arik</p>
+        </div>
+
+        <div class="top-actions">
+          <button id="themeToggle" class="toggle-btn" aria-label="Toggle theme">
+            <span class="toggle-icon">☀</span>
+            <span class="toggle-text">Light</span>
+          </button>
+          <button class="profile-pill">
+            <span class="avatar">A</span>
+            <span>Arik</span>
+          </button>
+        </div>
+      </header>
+
+      <section class="stats">
+        <div class="card">
+          <p>Skills Offered</p>
+          <h3>8</h3>
+          <span>+2 this month</span>
+        </div>
+        <div class="card">
+          <p>Skills Wanted</p>
+          <h3>5</h3>
+          <span>1 pending update</span>
+        </div>
+        <div class="card">
+          <p>Messages</p>
+          <h3>24</h3>
+          <span>3 unread</span>
+        </div>
+        <div class="card">
+          <p>Avg Rating</p>
+          <h3>4.8</h3>
+          <span>Based on 18 reviews</span>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Recent Matches</h2>
+            <a href="#">View all</a>
+          </div>
+
+          <div class="match-list">
+            <div class="match-item">
+              <div class="avatar small">M</div>
+              <div>
+                <h4>Maria Lopez</h4>
+                <p>Teaches English, wants Web Development</p>
+              </div>
+              <button>Chat</button>
+            </div>
+
+            <div class="match-item">
+              <div class="avatar small">J</div>
+              <div>
+                <h4>John Carter</h4>
+                <p>Teaches Excel, wants Design</p>
+              </div>
+              <button>Chat</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Upcoming Sessions</h2>
+            <a href="#">Manage</a>
+          </div>
+
+          <div class="session">
+            <div>
+              <h4>Web Development ↔ English</h4>
+              <p>Today • 7:00 PM</p>
+            </div>
+            <span class="status confirmed">Confirmed</span>
+          </div>
+
+          <div class="session">
+            <div>
+              <h4>Python ↔ Data Analysis</h4>
+              <p>Tomorrow • 5:30 PM</p>
+            </div>
+            <span class="status pending">Pending</span>
+          </div>
+        </div>
+
+        <div class="panel wide">
+          <div class="panel-header">
+            <h2>Activity Overview</h2>
+            <a href="#">Details</a>
+          </div>
+
+          <div class="activity">
+            <div class="activity-item">
+              <span class="dot"></span>
+              <p>You accepted a session request from Maria.</p>
+            </div>
+            <div class="activity-item">
+              <span class="dot"></span>
+              <p>New message from John Carter.</p>
+            </div>
+            <div class="activity-item">
+              <span class="dot"></span>
+              <p>Your profile rating increased to 4.8 stars.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
